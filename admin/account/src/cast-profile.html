@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cast Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <aside>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="../images/Group 112.png" alt="admin logo" width="70">
+                    <h5 class="mt-2">
+                        Marie Yuri
+                    </h5>
+                    <p class="text-mute">
+                        Account Admin
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="py-3">
+            <a class="nav-link" href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    
+            <a class="nav-link" id="btn-guest" href="#registered-guest"><i class="fas fa-user-friends"></i> Registered Guest <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-guest px-4 py-2" id="dropdown-guest">
+                <a class="nav-link" href="user-list.html">Users</a>
+                <a class="nav-link" href="cast-list.html">Casts</a>
+            </div>
+    
+            <a class="nav-link" id="btn-list" href="#confirmation-list"><i class="far fa-check-circle"></i> Confirmation List <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-list px-4 py-2" id="dropdown-list">
+                <a class="nav-link" href="user-confirmation.html">Unconfirmed User</a>
+                <a class="nav-link" href="cast-confirmation.html">Unconfirmed Cast</a>
+            </div>
+    
+            <a class="nav-link" id="btn-black" href="#blacklisted"><i class="fas fa-ban"></i> BlackListed <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-black px-4 py-2" id="dropdown-black">
+                <a class="nav-link" href="blacklist-user.html">Blacklist User</a>
+                <a class="nav-link" href="blacklist-cast.html">Blacklist Cast</a>
+            </div>
+    
+            <a class="nav-link" id="btn-transaction" href="#transactions"><i class="fas fa-book"></i> Transactions <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-transaction px-4 py-2" id="dropdown-transaction">
+                <a class="nav-link" href="#user">Cancelled</a>
+                <a class="nav-link" href="#user">Pending</a>
+                <a class="nav-link" href="#user">Completed</a>
+            </div>
+        </div>
+    </aside>
+
+    <nav class="navbar navbar-expand-lg navbar-light px-5">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Messages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+    
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Notification
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            </li>
+    
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Setting
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-orange my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+    </nav>
+<main>
+    <div class="container bg-light pt-5 pb-3 px-5 table-list">
+        <div class="row">
+            <div class="col-lg-2">
+                <img class="img-fluid" src="../images/Group 114.png" alt="" width="150">
+            </div>
+            <div class="col mt-4">
+                <h2>June <i class="fas fa-circle" style="font-size: 15px;color:lightgreen;"></i></h2>
+                <p class="text-default">Cast</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col px-5">
+                <div class="float-right">
+                    <a class="btn btn-danger" href="#block"><i class="fas fa-ban"></i> Block Cast</a>
+                    <a class="btn btn-success" href="#activity"><i class="fas fa-list-ul"></i> Activity Log</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <a class="btn" href="#about">About</a>
+                <a class="btn" href="#time">Timeline</a>
+                <a class="btn" href="#setting">Setting</a>
+                <a class="btn" href="#more">More <i class="fas fa-caret-down"></i></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 bg-light p-4 mr-4" style="height: 250px;">
+                <h5 class="text-default mb-3">Info 
+                    <i class="fas fa-ellipsis-h float-right" style="color: black;cursor: pointer;">
+                    </i>
+                </h5>
+                <p>
+                    <i class="fas fa-user mr-2"></i> Juneeey
+                </p>
+                <p class="mt-3">
+                    <i class="fas fa-map-marker-alt mr-2"></i> Osaka, Japan
+                </p>
+                <p class="mt-3">
+                    <i class="fas fa-envelope mr-2"></i> june@gmail.com
+                </p>
+                <p class="mt-3">
+                    <i class="fas fa-phone-alt mr-2"></i> +13-002-1259
+                </p>
+            </div>
+            
+            <div class="col bg-light p-5">
+                <h5 class="text-default">Rates and Reviews</h5><br>
+                <div class="py-3">
+                    <span>
+                        <img class="img-fluid mr-3" src="../images/Group 113.png" alt="" width="80">  Karl Jasen
+                        <i class="fas fa-star text-default star-right"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+                <hr>
+                <div class="py-3">
+                    <span>
+                        <img class="img-fluid mr-3" src="../images/Group 113.png" alt="" width="80">  Karl Jasen
+                        <i class="fas fa-star text-default star-right"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+                <hr>
+                <div class="py-3">
+                    <span>
+                        <img class="img-fluid mr-3" src="../images/Group 113.png" alt="" width="80">  Karl Jasen
+                        <i class="fas fa-star text-default star-right"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+                <hr>
+                <div class="py-3">
+                    <span>
+                        <img class="img-fluid mr-3" src="../images/Group 113.png" alt="" width="80">  Karl Jasen
+                        <i class="fas fa-star text-default star-right"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+                <hr>
+                <div>
+                    <span>
+                        <img class="img-fluid mr-3" src="../images/Group 113.png" alt="" width="80">  Karl Jasen
+                        <i class="fas fa-star text-default star-right"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star text-default"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="container error text-center" id="error">
+    <div class="row mt-5">
+        <div class="col py-5 mt-5">
+         <h1>
+             I'm sorry this is not available for mobile view.
+         </h1>
+        </div>
+    </div>
+    <div class="row">
+     <div class="col">
+         <p>
+             申し訳ありませんが、<br>
+             これはモバイルビューではご利用いただけません。。。。
+         </p>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col">
+            <img class="img-fluid" src="../images/omae.gif" alt="" width="100">
+            <img class="img-fluid" src="../images/girl-solo.gif" alt="" width="100">
+            <img class="img-fluid" src="../images/sexy.gif" alt="" width="100">
+        </div>
+    </div> -->
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://kit.fontawesome.com/23f8ce45d9.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="../js/slideToggle.js"></script>
+</body>
+</html>

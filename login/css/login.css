@@ -1,0 +1,27 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FF7F50;
+}
+
+aside{
+    background-color: #FFFFFF;
+    position: fixed;
+    height: 100%;
+    left: auto;
+    right: 0px;
+    width: 30%;
+}
+
+aside .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+form{
+    margin-top: 100px;
+}
+
+.btn-primary{
+    background-color: #FF7F50 !important;
+    border: none;
+}

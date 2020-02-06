@@ -1,0 +1,139 @@
+body{
+    background-color: #F5F5F5;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+nav{
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #cccccc;
+}
+
+aside{
+    background-color: #FF7F50;
+    position: fixed;
+    height: 100%;
+    padding-top: 50px;
+    z-index: 1;
+    color: #FFFFFF;
+    overflow: auto;
+}
+
+aside a{
+    color: #FFFFFF;
+    font-size: 100%;
+    padding-left: 20px;
+}
+
+aside a:hover{
+    background-color: #F1F1F1F1;
+    color: #333333;
+}
+
+aside .nav-link{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.fa-tachometer-alt, .fa-user-friends, .fa-check-circle, .fa-book, .fa-ban{
+    font-size: 100%;
+    margin-right: 10px;
+}
+
+.fa-chevron-down{
+    font-size: 12px;
+    position: absolute;
+    left: 80%;
+}
+
+.dropdown-guest{
+    background-color: #ffffff;
+    display: none;
+}
+
+.dropdown-guest a{
+    color: #333333;
+}
+
+.dropdown-list{
+    background-color: #ffffff;
+    display: none;
+}
+
+.dropdown-list a{
+    color: #333333;
+}
+
+.dropdown-black{
+    background-color: #ffffff;
+    display: none;
+}
+
+.dropdown-black a{
+    color: #333333;
+}
+
+.dropdown-transaction{
+    background-color: #ffffff;
+    display: none;
+}
+
+.dropdown-transaction a{
+    color: #333333;
+}
+
+.error{
+    display: none;
+}
+
+.bg-light{
+    background-color: #FFFFFF !important;
+}
+
+.text-default{
+    color: #FF7F50;
+}
+
+hr{
+    border: 1px solid #cccccc !important;
+}
+
+.btn-outline-orange{
+    border: 1px solid #FF7F50;
+    background-color: transparent;
+    color: #FF7F50;
+}
+
+.btn-outline-orange:hover{
+    background-color: #FF7F50;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.error{
+    margin-top: 100px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #cccccc; 
+    border-radius: 100px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+
+} */
